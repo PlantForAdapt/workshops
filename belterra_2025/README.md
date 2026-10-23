@@ -2,7 +2,7 @@
 Sylvain Schmitt -
 Jul 25, 2025
 
-This folder will contains the material for the workshop for the Friday
+This folder contains the material for the workshop for the Friday
 available here [Forest dynamic with R](workshop/workshop.html) .
 Specifically:
 

@@ -68,6 +68,7 @@ library(tidybayes)
 Começamos carregando os dados na forma de objetos no formato Rdata.
 
 ```{r}
+```{r}
 load("data/data_paracou_p6.RData")
 dt_P6 <- dt_P6 %>% 
   select(Forest, Plot, PlotArea, SubPlot, 
@@ -634,7 +635,7 @@ Começamos recuperando todos os crescimentos das espécies de Paracou disponíve
 ```{r}
 #| fig-align: center
 #| fig-height: 3.5
-dt <- read_csv("data/growth_raw.csv", locale = locale(decimal_mark = ",")) %>% 
+dt <- read_csv("data/growth_raw.csv", locale = locale(decimal_mark = ",")) %>% oo
   select(Species, `Median Gmax`) %>% 
   rename(species = Species, Gmax =  `Median Gmax`) %>% 
   mutate(species = gsub(" ", "_", species)) %>% 
